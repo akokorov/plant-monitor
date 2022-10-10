@@ -1,0 +1,34 @@
+{
+    "tags": [],
+    "description": "",
+    "objects": [
+        {
+            "id": 1025919851,
+            "classId": 10145861,
+            "description": "",
+            "geometryType": "rectangle",
+            "labelerLogin": "akokorov",
+            "createdAt": "2022-09-15T04:01:43.120Z",
+            "updatedAt": "2022-09-15T04:01:43.120Z",
+            "tags": [],
+            "classTitle": "plant",
+            "points": {
+                "exterior": [
+                    [
+                        224.0,
+                        40.0
+                    ],
+                    [
+                        483.0,
+                        380.0
+                    ]
+                ],
+                "interior": []
+            }
+        }
+    ],
+    "size": {
+        "height": 480,
+        "width": 640
+    }
+}
