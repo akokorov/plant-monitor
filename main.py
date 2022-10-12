@@ -43,9 +43,9 @@ def predict():
     if flask.request.method == "POST":
 
         file = flask.request.files.get('file')
-        file.save('data/'+file.filename)
-        image = cv2.imread('data/' + file.filename)
-        print('data/' + file.filename)
+        file.save('img.jpg')
+        image = cv2.imread('img.jpg')
+        print(file.filename)
         device_id = file.filename.replace('.jpg','')
         start = time.time()
         box = roi_lenet(image)
