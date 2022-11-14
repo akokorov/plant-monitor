@@ -50,6 +50,14 @@ jobs:
 
       - name: Push Docker image
         run: docker push $IMAGE_NAME
+      
+      - name: Deploy to Cloud Run
+        id: deploy
+        uses: google-github-actions/deploy-cloudrun@v0
+        with:
+          service: plant-monitor
+          region: asia-southeast1
+          image: asia-southeast1-docker.pkg.dev/ini-ai/plant-monitor/plant-monitor
 
       - name: Run a one-line script
-        run: echo Do Do Done!
+        run: echo ${{ steps.deploy.outputs }}
